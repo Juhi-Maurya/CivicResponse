@@ -1,0 +1,101 @@
+.A2sidebar{
+    width:280px;
+      height:100vh;
+        min-height: 100vh;
+height: auto;
+    /* background-color:#0e2038; */
+     background: linear-gradient(135deg, #003366, #003366,black);
+    opacity: 0.9;
+    position:fixed;
+color:white;
+    top:90px;;
+    left:0;
+}
+/* When sidebar is closed */
+
+
+.A2sidebar hr{
+border: 1px solid black;
+}
+.A2sidebar_link{
+ margin-top:70px;
+
+   font-family: bold;
+
+}
+.A2sidebar_link h2{
+  margin-bottom: 20px;;
+  margin-top:30px;
+  font-size: 30px;;
+  /* color:black;   */
+  margin-left: 30px;
+  opacity: 0.7;
+}
+.A2sidebar_link a{
+  font-size: 24px;
+    font-family: bold;
+    color:rgb(255,255,255,0.6);
+  text-decoration: none;
+  
+  display: block;
+  height: 30px; ;
+
+  padding-left: 20px;;
+  margin-top:30px;
+
+
+}
+.A2sidebar_link a:hover{
+   background-color:rgb(255,255,255,0.5);
+  color:black;
+}
+.A2sidebar_link button{
+   background-color:#0e2038;
+    background: linear-gradient(135deg, #003366, #003366,black);
+   color: white;
+   font-size: 25px;
+   opacity: 0.6;
+   border: none;
+     font-family: bold;
+       margin-left: 30px;
+       margin-top:30px; 
+       height: 30px;;
+    
+       
+}
+
+.A2sidebar_link button:hover{
+     text-decoration: underline;
+     color:white;
+    
+       
+       
+}
+.A2sidebar {
+  position: fixed;
+  top: 90px;      /* below Navbar */
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  z-index: 2000;   /* very high so it stays on top */
+  transform: translateX(-280px);
+  transition: 0.3s ease;
+}
+
+.A2sidebar.open {
+  transform: translateX(0);
+}
+
+.Admin2_sidebar-toggle {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  z-index: 3000;  /* higher than sidebar */
+  background: #003366;
+  color: white;
+  font-size: 26px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}

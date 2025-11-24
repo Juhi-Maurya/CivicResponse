@@ -1,0 +1,235 @@
+.UnsatisfiedComplaint {
+  padding: 16px;
+  background-color: rgba(169, 189, 209, 0.8);
+    background: linear-gradient(135deg, #a7c9ff, #d2e8ff);
+
+  min-height: 100vh;
+  width: 100%;
+  font-family: bold;
+  justify-content: center;
+  position: relative;
+}
+
+.UnsatisfiedComplaint h1 {
+  margin-top: 100px;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  /* background-color: rgb(123, 145, 167); */
+    background: linear-gradient(135deg, #1e3a59, #3f5c87);
+  color: white;
+
+  height: 65px;
+  padding-top: 10px;
+}
+
+.Unsatisfied_cmp p {
+  margin-top: 10px;
+}
+
+.admin2_actions h2,
+.Unsatisfied_cmp h2,
+.cmp_history_box h2 {
+  display: block;
+  margin-bottom: 20px;
+  /* margin-left: 30px; */
+  margin-top: 20px;
+  font-size: 28px;
+  background: #1e3a59;
+  color: white;
+  padding: 14px 20px;
+}
+
+.admin2_actions_box,
+.Unsatisfied_cmp_details,
+.cmp_history_box {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.Unsatisfied_cmp,
+.admin2_actions,
+.cmp_history_box {
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 200px;
+  top: 130px;
+  font-size: 20px;
+  /* border: 2px solid black; */
+}
+
+.cmp_history {
+  margin-top: 20px;
+}
+
+.cmp_history p {
+  margin-left: 30px;
+}
+
+.cmp_history_box {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.admin2_actions {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.admin2_actions_box select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: bold;
+}
+
+.admin2_resolve_btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: bold;
+  
+}
+
+.admin2_actions_box textarea {
+  margin-top: 15px;
+  width: 80%;
+  height: 70px;
+  font-size: 17px;
+}
+
+.admin_previous_actions {
+  margin-top: 20px;
+}
+
+.admin_previous_actions button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-size: 20px;
+  font-family: bold;
+  background: linear-gradient(135deg, #4a6fa1, #1e3a59);
+        height:50px;
+        width:30%;
+}
+
+.pending_admin_response1 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.cmp_history_box button,
+.admin2_actions_box button {
+  margin-top: 20px;
+  margin-left: 30px;
+  height: 40px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: bold;
+  width: 35%;
+  cursor: pointer;
+  background: linear-gradient(135deg, #4a6fa1, #1e3a59);
+        height:50px;
+        width:30%;
+        color: white;
+}
+
+/*  Responsive Styles */
+@media (max-width: 1200px) {
+  .Unsatisfied_cmp,
+  .admin2_actions,
+  .cmp_history_box {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .Unsatisfied_cmp,
+  .admin2_actions,
+  .cmp_history_box {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .admin2_actions_box textarea {
+    width: 90%;
+  }
+
+  .cmp_history_box button,
+  .admin2_actions_box button {
+    width: 60%;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .UnsatisfiedComplaint h1 {
+    font-size: 22px;
+    height: auto;
+    padding: 15px 5px;
+  }
+
+  .Unsatisfied_cmp,
+  .admin2_actions,
+  .cmp_history_box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+
+  .Unsatisfied_cmp_details,
+  .admin2_actions_box,
+  .cmp_history_box {
+    font-size: 16px;
+  }
+
+  .admin2_actions_box textarea {
+    width: 100%;
+    height: 100px;
+  }
+
+  .cmp_history_box button,
+  .admin2_actions_box button {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+.cmp_history_box p{ margin-left:30px;
+margin-top: 10px;
+margin-bottom: 10px;;}
+@media (max-width: 576px) {
+  .UnsatisfiedComplaint {
+    padding: 10px;
+  }
+
+  .Unsatisfied_cmp,
+  .admin2_actions,
+  .cmp_history_box {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 15px;
+    border-width: 1px;
+  }
+
+  .cmp_history_box button,
+  .admin2_actions_box button {
+    width: 90%;
+    height: 38px;
+    font-size: 15px;
+  }
+
+  .admin2_actions_box textarea {
+    font-size: 15px;
+    height: 90px;
+  }
+
+  .UnsatisfiedComplaint h1 {
+    font-size: 20px;
+  }
+}

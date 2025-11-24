@@ -1,0 +1,177 @@
+.handle_complaint {
+  padding: 16px;
+  background: linear-gradient(135deg, #a7c9ff, #d2e8ff);
+  min-height: 100vh;
+  width: 100%;
+  font-family: bold;
+  justify-content: center;
+  position: relative;
+    min-height: 100vh;
+height: auto;
+}
+
+/* Header */
+.handle_complaint h1 {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+
+  background: linear-gradient(135deg, #1e3a59, #3f5c87);
+  color: white;
+
+  height: auto;
+  padding: 14px 30px;
+}
+
+/* White boxes (same as details-box) */
+.info_details_box,
+.admin_actions,
+.admin_previous_actions {
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  /* border-radius: 12px; */
+  border: 2px solid transparent;
+}
+
+/* Section titles (h2) */
+.info_details_box h2,
+.admin_actions h2,
+.admin_previous_actions h2 {
+  font-size: 28px;
+  background: #1e3a59;
+  color: white;
+  padding: 14px 20px;
+  /* margin: 0 0 20px 0; */
+  /* border-radius: 8px; */
+}
+
+/* Text content */
+.info_details_box p {
+  margin: 15px 30px;
+}
+
+.ad_complaint_info,
+.admin_actions_box {
+  font-size: 20px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+/* Dropdowns + Inputs */
+.admin_actions_box select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: bold;
+}
+
+.admin_actions_box textarea {
+  margin-top: 15px;
+  width: 80%;
+  height: 70px;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+/* Buttons */
+.admin_resolve_btn,
+.admin_previous_actions button {
+  margin-left: 30px;
+  font-size: 20px;
+  font-family: bold;
+  color: white;
+  background-color: rgba(14, 32, 56, 0.8);
+    background: linear-gradient(135deg, #4a6fa1, #1e3a59);
+
+  height: 50px;
+  width: 20%;
+  text-align: center;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Previous responses box */
+.admin_response1 {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 1200px) {
+  .info_details_box,
+  .admin_actions,
+  .admin_previous_actions {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .admin_resolve_btn,
+  .admin_previous_actions button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .info_details_box,
+  .admin_actions,
+  .admin_previous_actions {
+    width: 85%;
+    margin-left: 7%;
+  }
+
+  .admin_resolve_btn,
+  .admin_previous_actions button {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .info_details_box,
+  .admin_actions,
+  .admin_previous_actions {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .admin_resolve_btn,
+  .admin_previous_actions button {
+    width: 60%;
+  }
+
+  .admin_actions_box textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .handle_complaint h1 {
+    height: auto;
+    padding: 10px;
+  }
+
+  .info_details_box,
+  .admin_actions,
+  .admin_previous_actions {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .admin_resolve_btn,
+  .admin_previous_actions button {
+    width: 80%;
+  }
+
+  .admin_actions_box textarea {
+    width: 95%;
+  }
+}

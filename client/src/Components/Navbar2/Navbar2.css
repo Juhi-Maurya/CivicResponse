@@ -1,0 +1,85 @@
+.navbar2 {
+   align-items: center;
+  height: 90px;
+  width: 100%;
+  background-color: #0e2038;
+  background: linear-gradient(135deg, #00BFFF,#003366, #003366);
+  position: fixed;
+  font-weight: 100;
+  font-family: bold;
+  display: flex;
+  align-items: center;
+  gap: 5vw; /* instead of fixed 100px */
+  z-index: 1000;
+  padding: 0 2vw;
+  box-sizing: border-box;
+  
+}
+.nav_title h2{
+   font-size: clamp(22px, 2.3vw, 35px); /* scales with screen size */
+  color: white;
+  opacity: 0.8;
+  margin-left: 1vw;
+
+
+}
+.nav_title p{
+  font-size: clamp(12px, 1.2vw, 16px);
+  color: white;
+  opacity: 0.8;
+  margin-left: 1vw;
+  
+}
+.nav2_link{
+  gap: 3vw;
+  display: flex;
+  align-items: center;
+  padding-left: 5vw;
+  margin-left: auto;
+
+}
+.nav2_link a{
+
+  color:rgb(255,255,255 ,0.6);
+   text-decoration: none;
+   /* opacity: 0.7; */
+     font-weight: bold;
+  font-size: 21px;
+}
+.nav2_link a:hover{
+
+  color:white;
+  opacity: 0.9;;
+  /* text-decoration: underline; */
+}
+.nav2_link button{
+  
+  width:130px;
+   background-color:rgb(255,255,255,0.5);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border:none;
+  color:black;
+  margin-left:60px;
+  
+  /* opacity: 0.8; */
+  font-size:20px;
+  /* color:white; */
+  height: 55px;
+  border-radius:15px;
+  border:none;
+  font-family: bold;
+  /* margin-top:10px; */
+
+
+  opacity: 0.8;
+
+
+
+}
+.nav2_link button:hover{
+/* background-color: white;*/
+   background-color:rgb(255,255,255 );
+   /* text-decoration:double; */
+
+
+}

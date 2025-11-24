@@ -1,0 +1,122 @@
+.admin2_received_complaint {
+  padding: 16px;
+  background: linear-gradient(135deg, #a7c9ff, #d2e8ff); /* updated background */
+  min-height: 100vh;
+  width: 100%;
+  font-family: bold;
+  justify-content: center;
+  position: relative;
+}
+
+.admin2_received_complaint h1 {
+  margin-top: 130px;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #1e3a59, #3f5c87); /* gradient header */
+  color: white;
+  height: 65px;
+  padding-top: 10px;
+  /* border-radius: 12px; */
+  letter-spacing: 1px;
+}
+
+.admin2_received_complaint h2 {
+  margin-left: 200px;
+  margin-bottom: 20px;
+  color: #1e3a59;
+  font-weight: bold;
+}
+
+/* Table containers */
+.admin2_table-container,
+.admin2_table2-container {
+  padding: 16px;
+  background: linear-gradient(135deg, #a7c9ff, #d2e8ff);
+  min-height: 100vh;
+  width: 100%;
+  font-family: bold;
+  justify-content: center;
+  position: relative;
+}
+
+/* Table titles */
+.admin2_table-title,
+.admin2_table2-title {
+  font-size: 30px;
+  margin-top: 100px;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #1e3a59, #3f5c87);
+  padding: 14px 30px;
+  border-radius: 12px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+/* Tables */
+.admin2_unresolved_table,
+.admin2_unresolved_table2 {
+  width: 70%;
+  margin-left: 200px;
+  margin-top: 50px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  margin-bottom: 30px;
+}
+
+/* Table headers */
+.admin2_unresolved_table th,
+.admin2_unresolved_table2 th {
+  background: #1e3a59;
+  color: white;
+  font-weight: 600;
+  padding: 14px 18px;
+  text-align: center;
+}
+
+/* Table cells */
+.admin2_unresolved_table td,
+.admin2_unresolved_table2 td {
+  padding: 12px 16px;
+  border: 1px solid rgba(0,0,0,0.2);
+  text-align: center;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Complaint ID column */
+.admin2_unresolved_table th:first-child,
+.admin2_unresolved_table td:first-child,
+.admin2_unresolved_table2 th:first-child,
+.admin2_unresolved_table2 td:first-child {
+  width: 100px;
+}
+
+/* Complaint Type column wrapping */
+.admin2_unresolved_table th:nth-child(2),
+.admin2_unresolved_table td:nth-child(2),
+.admin2_unresolved_table2 th:nth-child(2),
+.admin2_unresolved_table2 td:nth-child(2) {
+  max-width: 200px;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* New complaint badge */
+.new-inline {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 12px;
+}

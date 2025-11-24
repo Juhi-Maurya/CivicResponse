@@ -1,0 +1,118 @@
+.Asidebar{
+    width:280px;
+      height:100vh;
+    /* background-color:#0e2038; */
+     background: linear-gradient(135deg, #003366, #003366,black);
+    opacity: 0.9;
+    position:fixed;
+color:white;
+    top:90px;;
+    left:0;
+      min-height: 100vh;
+height: auto;}
+
+
+.Asidebar hr{
+border: 1px solid black;
+}
+.Asidebar_link{
+ margin-top:70px;
+ /* margin-left:50px;; */
+   font-family: bold;
+   /* border: 2px solid black; */
+
+}
+.Asidebar_link h2{
+  margin-bottom: 20px;;
+  margin-top:30px;
+  font-size: 30px;;
+  /* color:black;   */
+  margin-left: 30px;
+  opacity: 0.7;
+}
+.Asidebar_link a{
+  font-size: 24px;
+    /* color: white; */
+  font-family: bold;
+    color:rgb(255,255,255,0.6);
+  text-decoration: none;
+  /* font-weight: bold; */
+  display: block;
+  height: 30px; ;
+  /* align-items: center; */
+  /* text-align:center; */
+  /* margin-left: 50px;; */
+  padding-left: 30px;;
+  margin-top:20px;
+  
+
+
+ 
+  /* font-size: 21px; */
+  /* transition: color 0.3s ease; */
+  /* justify-content: space-evenly; */
+  
+
+}
+.Asidebar_link a:hover{
+  /* background-color: white; */
+   background-color:rgb(255,255,255,0.5);
+   /* text-decoration: underline; */
+       /* background-color:rgb(14, 32, 56,0.6); */
+
+  color:black;
+}
+.Asidebar_link button{
+   background-color:#0e2038;
+    background: linear-gradient(135deg, #003366, #003366,black);
+   color: white;
+   font-size: 25px;
+   opacity: 0.6;
+   border: none;
+     font-family: bold;
+       /* font-weight: bold; */
+       margin-left: 30px;
+       margin-top:30px; 
+       /* width: 100%; */
+       height: 30px;;
+    
+       
+}
+
+.Asidebar_link button:hover{
+     /* background-color:rgb(255,255,255,0.5);   */
+     text-decoration: underline;
+     color:white;
+     /* font-size: 25px; */
+       /* background-color:rgb(255,255,255,0.5); */
+       
+       
+}
+.Asidebar {
+  position: fixed;
+  top: 90px;      /* below Navbar */
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  z-index: 2000;   /* very high so it stays on top */
+  transform: translateX(-280px);
+  transition: 0.3s ease;
+}
+
+.Asidebar.open {
+  transform: translateX(0);
+}
+
+.Admin_sidebar-toggle {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  z-index: 3000;  /* higher than sidebar */
+  background: #003366;
+  color: white;
+  font-size: 26px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}

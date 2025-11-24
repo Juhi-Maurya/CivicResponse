@@ -1,0 +1,159 @@
+/* MAIN WRAPPER – same as notification box */
+.admin_received_complaint {
+  padding: 16px;
+  background: linear-gradient(135deg, #a7c9ff, #d2e8ff); /* SAME as notification */
+  /* min-height: 120vh; */
+    min-height: 100vh;
+height: auto;
+  width: 100%;
+  font-family: bold;
+  justify-content: center;
+  position: relative;
+}
+
+/* Top Page Title */
+.admin_received_complaint h1 {
+  color: white;
+  margin-top: 130px;
+  text-align: center;
+  font-size: 30px;
+  height: 70px;
+  padding-top: 15px;
+
+  background: linear-gradient(135deg, #1e3a59, #3f5c87); /* SAME blue header */
+  border-radius: 12px;
+  letter-spacing: 1px;
+}
+
+/* Sub-title (Complaint List Heading) */
+.admin_received_complaint h2 {
+  margin-left: 200px;
+  margin-bottom: 20px;
+  color: #1e3a59;
+  font-weight: bold;
+}
+
+/* Table Container – matches notification container */
+.admin_table-container {
+  padding: 16px;
+  background: linear-gradient(135deg, #a7c9ff, #d2e8ff);
+  min-height: 100vh;
+  width: 100%;
+  font-family: bold;
+  justify-content: center;
+  position: relative;
+}
+
+/* Table Title */
+.admin_table-title {
+  font-size: 30px;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #1e3a59;
+}
+
+/* TABLE BOX – upgraded like notification_table */
+.admin_status_table {
+  width: 70%;
+  margin-left: 150px;
+  margin-top: 50px;
+  font-size: 20px;
+
+  background: rgba(255, 255, 255, 0.75); /* glass effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* HEADER – matching notification dark header */
+.admin_status_table th {
+  background: #1e3a59;
+  color: white;
+  font-weight: 600;
+  padding: 14px 18px;
+}
+
+/* ROWS – matching notification style */
+.admin_status_table td {
+  padding: 12px 16px;
+  border: 1px solid rgba(0,0,0,0.2);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+
+/* Complaint ID column */
+.admin_status_table th:first-child,
+.admin_status_table td:first-child {
+  width: 120px;
+}
+
+/* Complaint Type Column – wrapping text */
+.admin_status_table th:nth-child(2),
+.admin_status_table td:nth-child(2) {
+  max-width: 260px;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* NEW badge */
+.new-inline {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 1200px) {
+  .admin_status_table {
+    width: 85%;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .admin_received_complaint h1 {
+    font-size: 28px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .admin_status_table {
+    width: 90%;
+    margin-left: 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin_status_table {
+    width: 95%;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .admin_received_complaint h2 {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin_status_table {
+    width: 100%;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .admin_status_table th,
+  .admin_status_table td {
+    padding: 6px;
+  }
+}

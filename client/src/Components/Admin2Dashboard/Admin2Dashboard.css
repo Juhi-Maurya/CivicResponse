@@ -1,0 +1,138 @@
+/* Dashboard layout */
+.admin2_dash {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+    min-height: 100vh;
+height: auto;
+}
+
+.admin2-dash1 {
+  padding-top: 90px;
+  background: linear-gradient(to right, #e6f4ff, #b3d9ff);
+  height: auto;
+  min-height: 100vh;
+  font-size: 25px;
+  font-family: bold;
+}
+
+/* Dashboard title */
+.admin2_dashboard {
+  padding-top: 10px;
+  text-align: center;
+  height: 70px;
+}
+
+.admin2-dash1 h2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: 70px;
+  color: #003366;
+}
+
+/* Section layout */
+.admin2_section1 {
+  display: flex;
+  margin-left: 15px;
+  gap: 20px;
+  margin-top: 200px;
+  justify-content: center;
+}
+
+.admin2_section2 {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding-left: 100px;
+  align-items: center;
+  margin-left: 250px;
+}
+
+/* Complaint cards */
+.admin2_section1 div {
+  height: 60px;
+  max-width: 500px;
+  min-width: 300px;
+  color: #003366;
+  background: linear-gradient(to right, #e6f4ff, #b3d9ff);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  font-family: bold;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+/* Buttons */
+.admin2_section2 button {
+  height: 120px;
+  flex: 1 1 250px;
+  max-width: 400px;
+  min-width: 300px;
+  border-radius: 10px;
+  border: none;
+  font-size: 25px;
+  font-family: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.admin2_section2 button:hover {
+  transform: translateY(-5px) scale(1.05);
+  cursor: pointer;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.admin2_submit_complaint {
+  background: linear-gradient(135deg, #fbd786, #003366);
+}
+
+.admin2_notification {
+  background: linear-gradient(135deg, #a8e063, #003366);
+}
+
+/* Scrolling text area */
+.admin2_animated-icons {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #f7797d, #2575fc);
+}
+
+.admin2_scroll-container {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.admin2_scroll-text {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #003366;
+  animation: scrollloop 20s linear infinite;
+}
+
+.admin2_wel_info {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  background: linear-gradient(to right, #e6f4ff, #b3d9ff);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}

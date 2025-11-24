@@ -1,0 +1,111 @@
+.admin_navbar {
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  background-color: #0e2038;
+  background: linear-gradient(135deg, #00BFFF,#003366, #003366);
+  position: fixed;
+  font-weight: 100;
+  font-family: bold;
+  display: flex;
+  align-items: center;
+  gap: 5vw; /* instead of fixed 100px */
+  z-index: 1000;
+  padding: 0 2vw;
+  box-sizing: border-box;
+}
+
+/* Title section */
+.admin_nav_title h2 {
+  font-size: clamp(22px, 2.3vw, 35px); /* scales with screen size */
+  color: white;
+  opacity: 0.8;
+  margin-left: 1vw;
+}
+
+.admin_nav_title p {
+  font-size: clamp(12px, 1.2vw, 16px);
+  color: white;
+  opacity: 0.8;
+  margin-left: 1vw;
+}
+
+/* Links container */
+.admin_nav_link {
+  gap: 3vw;
+  display: flex;
+  align-items: center;
+  padding-left: 5vw;
+  margin-left: auto; /* auto pushes it to right */
+}
+
+/* Links text */
+.admin_nav_link a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: clamp(14px, 1.3vw, 21px);
+  transition: color 0.2s ease;
+}
+
+.admin_nav_link a:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+/* Button */
+.admin_nav_link button {
+  width: clamp(90px, 10vw, 130px);
+  height: clamp(40px, 5vh, 55px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  color: black;
+  margin-left: 2vw;
+  font-size: clamp(14px, 1.2vw, 20px);
+  border-radius: 15px;
+  font-family: bold;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.admin_nav_link button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+/*  Responsive adjustments for smaller devices */
+@media (max-width: 1024px) {
+  .admin_navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 4vw;
+    justify-content: space-between;
+  }
+
+  .admin_nav_link {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: 0;
+    gap: 2vw;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin_navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .admin_nav_link {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .admin_nav_link a,
+  .admin_nav_link button {
+    margin-left: 0;
+  }
+}
